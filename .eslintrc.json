@@ -1,0 +1,54 @@
+{
+  "root": true,
+  "extends": [
+      "next/core-web-vitals",
+      "plugin:prettier/recommended",
+      "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+      "prettier/prettier": "error",
+      "no-console": [
+          "warn",
+          {
+              "allow": ["error"]
+          }
+      ],
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": ["error"],
+      "import/no-anonymous-default-export": [
+          2,
+          {
+              "allowObject": true
+          }
+      ],
+      "react-hooks/exhaustive-deps": "off"
+  },
+  "overrides": [
+      {
+          "files": ["**/*.interface.ts"],
+          "rules": {
+              "@typescript-eslint/no-namespace": "off",
+              "@typescript-eslint/no-empty-interface": "off"
+          }
+      },
+      {
+          "files": ["**/*.spec.ts"],
+          "env": {
+              "jest": true
+          }
+      },
+      {
+          "files": ["cypress/**"],
+          "rules": {
+              "@typescript-eslint/triple-slash-reference": "off"
+          }
+      },
+      {
+          "files": ["**/*.js"],
+          "rules": {
+              "@typescript-eslint/no-var-requires": "off"
+          }
+      }
+  ]
+}

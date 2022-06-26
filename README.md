@@ -10,9 +10,9 @@ yarn dev:admin and yarn dev:agent and yarn dev:client(package.json 참고)
 
 or
 
-yarn workspace [패키지명] dev nextjs 실행
+yarn workspace [패키지명] dev (nextjs 실행)
 
-react 파일인경우 yarn workspqce [패키지명] start
+react 파일인경우 yarn workspace [패키지명] start
 
 ## 프로젝트 생성 방법
 

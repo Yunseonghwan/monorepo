@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "license": "MIT",
   "workspaces": [
-    "packages/*"
+    "web-admin",
+    "web-end-user",
+    "web-partner"
   ],
   "private": true,
   "scripts": {
-    "dev:admin": "next dev ./packages/admin",
-    "dev:client": "next dev ./packages/client",
-    "dev:agent": "next dev ./packages/agent",
+    "dev:admin": "next dev ./web-admin",
+    "dev:client": "next dev ./web-end-user",
+    "dev:agent": "next dev ./web-partner",
     "build:admin": "next build ./packages/admin",
     "build:client": "next build ./packages/client",
     "build:agent": "next build ././packages/agent",

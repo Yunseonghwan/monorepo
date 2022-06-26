@@ -12,9 +12,9 @@
     "dev:admin": "next dev ./web-admin",
     "dev:client": "next dev ./web-end-user",
     "dev:agent": "next dev ./web-partner",
-    "build:admin": "next build ./packages/admin",
-    "build:client": "next build ./packages/client",
-    "build:agent": "next build ././packages/agent",
+    "build:admin": "next build ./web-admin",
+    "build:client": "next build./web-end-user",
+    "build:agent": "next build ./web-partner",
     "start": "next start",
     "lint": "next lint"
   },

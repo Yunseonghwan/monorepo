@@ -1,12 +1,12 @@
-import { Button } from "@/common/components";
 import type { NextPage } from "next";
 import styled from "styled-components";
+import { Button } from "design-system/stories";
 
 const Home: NextPage = () => {
   console.log("asd");
   return (
     <Container>
-      admin <Button />
+      admin <Button primary />
     </Container>
   );
 };

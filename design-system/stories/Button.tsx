@@ -1,5 +1,5 @@
 import React from "react";
-import "./button.css";
+import styled from "styled-components";
 
 export interface IButtonProps {
   primary: boolean;
@@ -11,14 +11,7 @@ export const Button = ({ primary, size, label }: IButtonProps) => {
   const mode = primary
     ? "storybook-button--primary"
     : "storybook-button--secondary";
-  return (
-    <button
-      type="button"
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
-        " "
-      )}
-    >
-      {label}
-    </button>
-  );
+  return <ButtonStyle>{label}</ButtonStyle>;
 };
+
+const ButtonStyle = styled.div``;

@@ -16,33 +16,15 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ],
-      "@pages/*": [
-        "src/pages/*"
-      ],
-      "@assets/*": [
-        "src/assets/*"
-      ],
-      "@common/*": [
-        "src/common/*"
-      ],
-      "@domains/*": [
-        "src/domains/*"
-      ],
-      "@utils/*": [
-        "src/utils/*"
-      ],
-      "@recoil/*": [
-        "src/recoil/*"
-      ],
-      "@types/*": [
-        "src/types/*"
-      ],
-      "@contants/*": [
-        "src/types/*"
-      ]
+      "@/*": ["src/*"],
+      "@pages/*": ["src/pages/*"],
+      "@assets/*": ["src/assets/*"],
+      "@common/*": ["src/common/*"],
+      "@domains/*": ["src/domains/*"],
+      "@utils/*": ["src/utils/*"],
+      "@recoil/*": ["src/recoil/*"],
+      "@types/*": ["src/types/*"],
+      "@contants/*": ["src/types/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
